@@ -5,6 +5,7 @@ You can access the project on Render at:
 
 [https://assignment-adq3.onrender.com/](https://assignment-adq3.onrender.com/)
 
+Please Note - I am using free plan of Render.com so expect delays upto 50 secomnds(minimum)
 
 ---
 

@@ -5,7 +5,6 @@ You can access the project on Render at:
 
 [https://assignment-adq3.onrender.com/](https://assignment-adq3.onrender.com/)
 
-For faster local connections, run the project on your local server to avoid any delays with WebSocket creation.
 
 ---
 

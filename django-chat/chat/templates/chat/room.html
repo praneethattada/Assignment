@@ -58,15 +58,17 @@
 
 {% block extra_js %}
 <script>
-    var ws_scheme = 'ws://'
-    if (window.location.protocol === 'https:'){
-            ws_scheme = 'wss://'
+  var ws_scheme = 'ws://'
+    if (window.location.protocol === 'https:') {
+        ws_scheme = 'wss://'
     }
+
     const roomId = '{{ room.id }}';
+    
+    // Use the dynamic Render environment URL without hardcoding port
     const chatSocket = new WebSocket(
         ws_scheme
-        + window.location.host.split(':')[0]
-        + ':8001'
+        + window.location.host.split(':')[0]  // Use the domain without the port
         + '/ws/chat/'
         + roomId
         + '/'

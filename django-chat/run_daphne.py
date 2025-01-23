@@ -9,4 +9,5 @@ from daphne.cli import CommandLineInterface
 
 if __name__ == "__main__":
     cli = CommandLineInterface()
-    cli.run(["-p", "8001", "chat_project.asgi:application"])
+    port = os.getenv("PORT", "8001")  # Default to 8001 if PORT is not set
+    cli.run(["-b", "0.0.0.0", "-p", port, "chat_project.asgi:application"])

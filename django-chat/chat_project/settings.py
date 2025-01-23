@@ -178,8 +178,16 @@ SESSION_COOKIE_PATH = '/'  # Cookie available for all paths
 SESSION_COOKIE_SAMESITE = 'Lax'  # Prevents CSRF while allowing normal navigation
 SESSION_EXPIRE_AT_BROWSER_CLOSE = False  # Session persists across browser close
 SESSION_COOKIE_AGE = 1209600  # 2 weeks in seconds
+SESSION_COOKIE_SECURE = True  # If you're using HTTPS in production
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
+
+CSRF_TRUSTED_ORIGINS = ['https://assignment-adq3.onrender.com']
+CSRF_COOKIE_SECURE = True  # Only if you're using HTTPS in production
+CSRF_COOKIE_DOMAIN = '.assignment-adq3.onrender.com'  # Change this to your actual domain
+
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

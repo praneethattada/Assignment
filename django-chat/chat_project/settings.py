@@ -184,7 +184,7 @@ SESSION_COOKIE_SECURE = True  # If you're using HTTPS in production
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
-CSRF_TRUSTED_ORIGINS = ['https://assignment-adq3.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://assignment-1-kl12.onrender.com']
 CSRF_COOKIE_SECURE = True  # Only if you're using HTTPS in production
 CSRF_COOKIE_DOMAIN = '.assignment-adq3.onrender.com'  # Change this to your actual domain
 
